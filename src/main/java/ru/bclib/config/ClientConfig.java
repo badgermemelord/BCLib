@@ -1,11 +1,8 @@
 package ru.bclib.config;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import ru.bclib.BCLib;
 import ru.bclib.api.dataexchange.handler.autosync.AutoSync;
 
-@Environment(EnvType.CLIENT)
 public class ClientConfig extends NamedPathConfig {
 	public static final ConfigToken<Boolean> SUPPRESS_EXPERIMENTAL_DIALOG = ConfigToken.Boolean(false, "suppressExperimentalDialogOnLoad", "ui");
 	
